@@ -1,0 +1,643 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", "Montserrat", "Roboto", sans-serif;
+  background-color: white;
+  line-height: 1.6;
+  color: rgb(78, 78, 78);
+  line-height: 1.7;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/*--------------------- home -----------------------*/
+/*--------------- Navbar --------------------------*/
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+/*--------------------- Heading -----------------------*/
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../imgs/bg.jpg) fixed center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.heading-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
+
+.heading-title p {
+  font-size: 50px;
+  font-weight: 400;
+  color: white;
+}
+.typing-text {
+  font-size: 45px;
+  font-weight: 400;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: typing 10s infinite alternate;
+}
+.typing-text::after {
+  content: "";
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: bottom;
+  border-right: 3px solid white;
+  animation: typing 7s infinite, infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: "|";
+  }
+  5% {
+    content: "A|";
+  }
+  10% {
+    content: "Ah|";
+  }
+  15% {
+    content: "Ahm|";
+  }
+  20% {
+    content: "Ahme|";
+  }
+  25% {
+    content: "Ahmed|";
+  }
+  30% {
+    content: "Ahmed A|";
+  }
+  35% {
+    content: "Ahmed Al|";
+  }
+  40% {
+    content: "Ahmed Al k|";
+  }
+  45% {
+    content: "Ahmed Al ka|";
+  }
+  50% {
+    content: "Ahmed Al kat|";
+  }
+  55% {
+    content: "Ahmed Al katt|";
+  }
+  60% {
+    content: "Ahmed Al katta|";
+  }
+  65% {
+    content: "Ahmed Al kattan|";
+  }
+  70% {
+    content: "Frontend D|";
+  }
+  75% {
+    content: "Frontend De|";
+  }
+  80% {
+    content: "Frontend Deve|";
+  }
+  85% {
+    content: "Frontend Develo|";
+  }
+  90% {
+    content: "Frontend Developer|";
+  }
+  100% {
+    content: "Web Developer|";
+  }
+}
+
+.icons-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icons-heading a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.icons-heading a:hover {
+  color: #30291c;
+}
+
+/*---------------------start about  -----------------------*/
+
+.progress {
+  height: 30px;
+  background: #eee;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-block: 30px;
+}
+
+.progress-bar {
+  background: #1d1d1d;
+  font-weight: 500;
+  border-radius: 15px;
+  display: flex;
+  align-items: start;
+  justify-items: center;
+  padding-left: 10px;
+  position: relative;
+  color: white;
+  font-size: 15px;
+}
+
+.ona {
+  position: absolute;
+  font-size: 15px;
+  left: 89%;
+  top: 2px;
+  font-weight: 500;
+  color: white;
+}
+.onb {
+  position: absolute;
+  font-size: 15px;
+  left: 74%;
+  top: 3px;
+  font-weight: 500;
+  color: white;
+}
+.onc {
+  position: absolute;
+  left: 84%;
+  font-size: 15px;
+  top: 2px;
+  font-weight: 500;
+  color: white;
+}
+.btn-one {
+  background-color: #1c1c1c;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.btn-one:hover {
+  background-color: #ffffff;
+  color: black;
+}
+.btn-two {
+  background-color: #ffffff;
+  padding: 8px 20px;
+
+  color: black;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.btn-two:hover {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+/*------------------ start service --------------------*/
+#service {
+  background-color: #f7f7f7;
+  overflow: auto;
+}
+
+.service-card {
+  text-align: center;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  transition: 0.5s;
+}
+.icon i {
+  font-size: 25px;
+  color: #343434;
+  transition: 0.3s;
+}
+.service-card:hover .icon {
+  background: #343434;
+  color: #fff;
+}
+.service-card:hover .icon i {
+  color: #fff;
+}
+/*------------------ start portfolio --------------------*/
+
+.layer-card-portfolio {
+  background-color: rgba(255, 255, 255, 0.801);
+  position: absolute;
+  inset: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 97%;
+  height: 97%;
+  transition: all 1s;
+  opacity: 0;
+  transform: translateY(10px);
+}
+.portfolio-card:hover .layer-card-portfolio {
+  opacity: 1;
+  transform: translateY(0);
+}
+.layer-card-portfolio h5 {
+  transform: translateY(-30px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.portfolio-card:hover .layer-card-portfolio h5 {
+  transform: translateY(0);
+}
+
+.icons-prtofolia {
+  transform: translateY(15px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.portfolio-card:hover .icons-prtofolia {
+  transform: translateY(0);
+}
+
+.icons-prtofolia {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.icons-prtofolia a {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons-prtofolia i {
+  font-size: 16px;
+  background-color: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.icons-prtofolia i:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+/*------------------ start clients --------------------*/
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+  color: black;
+  border: none;
+}
+.custom-nav .nav-link {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 5px;
+  border: none;
+  background: none;
+}
+
+.custom-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black !important;
+  transition: width 0.3s ease-in-out;
+}
+
+.custom-nav .nav-link:hover::after,
+.custom-nav .nav-link.active::after {
+  width: 100%;
+}
+/*---------------------- Testimonia --------------------*/
+.carousel-item img {
+  width: 100px;
+  height: 100px;
+}
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -50px !important;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border: none !important;
+  transition: background-color 0.3s ease-in-out, transform 0.3s;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #6c7a89 !important;
+  transform: scale(1) !important;
+}
+
+/*--------------- counter -------------------*/
+#counter {
+  background: #fff;
+  margin-top: 100px;
+}
+.card-counter {
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.card-counter:hover {
+  transform: translateY(-7px);
+}
+.icon-counter {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.purecounter {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+.card-counter p {
+  margin: 0;
+  font-size: 21px;
+  color: #777;
+  font-weight: 700;
+}
+
+/*---------------- start our team --------------------*/
+.ourTeam {
+  background: #f7f7f7;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.img-ourTeam {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.img-ourTeam:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon-ourTeam {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  transform: rotateY(180deg) scale(0.8);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.img-ourTeam:hover .icon-ourTeam {
+  opacity: 1;
+  transform: rotateY(0deg) scale(1);
+}
+
+.icon-ourTeam i {
+  font-size: 17px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.icon-ourTeam i:hover {
+  background: black;
+  color: white;
+  transform: scale(1.1);
+}
+
+.sec-ourTeam {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+}
+
+.img-ourTeam:hover + .sec-ourTeam {
+  background: #333;
+}
+/*--------------------------- start contact ----------------------------*/
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease, color 0.3s ease;
+  outline: none;
+}
+
+.icon-circle i {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.icon-circle:hover {
+  background-color: black;
+}
+
+.icon-circle:hover i {
+  color: white;
+}
+.contact-info p {
+  white-space: nowrap;
+}
+.contact-form {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-form .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 5px;
+  border: none;
+  padding: 14px;
+  font-size: 15px;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form button {
+  width: auto;
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 12px 24px;
+  transition: background-color 0.3s;
+  margin-right: 1000px;
+}
+
+.contact-form button:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.contact-form .col-md-6 {
+  flex: 1;
+  min-width: 300px;
+}
+
+/*----------------- footer -----------------------------*/
+footer.end {
+  background: #111;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.copy-writer p {
+  font-size: 14px;
+  margin-top: 10px;
+}
